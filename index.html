@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="form-container">
+    <header>
+      <div class="user-name">
+        <h1>Harold Finch</h1>
+        <div>Your total</div>
+      </div>
+      <div class="user-price">$88</div>
+    </header>
+    <form action="#" method="get" novalidate>
+      <div class="form-row">
+        <label>
+          Credit card number
+          <input type="text" name="cardNumber">
+        </label>
+      </div>
+      <div class="form-row">
+        <label for="month">
+          Experation date
+        </label>
+        <div>
+          <select name="month" id="month">
+            <option disabled selected>Month</option>
+            <option>Januuary</option>
+            <option>Fabruary</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>Agust</option>
+            <option>September</option>
+            <option>Oktober</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <label>
+            <select name="year">
+              <option disabled selected>Year</option>
+              <option>2020</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="cvv">
+          CVV
+        </label>
+        <div class="cvv-holder">
+          <input type="password" name="cvv" id="cvv">
+          <span>3 or 4 digits - <a href="#">view example</a></span>
+        </div>
+      </div>
+        <hr class="line-1">
+        <div class="form-row">
+          <button type="submit" name="submit" value="Pay"> Pay</button>
+        </div>
+      <div class="form-row">
+      <a href="#">Cancel order</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
